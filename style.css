@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(rosehot-free-version/Rosehot.ttf);
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 200px auto;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e4d7c5;
+}
+
+.title-background{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c8af8c;
+    grid-column: 1 / span 2;
+}
+
+.title{
+    font-family: myFont;
+    font-size: 90px;
+}
+
+.content{
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.book{
+    margin:5px;
+    padding:5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid red;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.read{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    font-family: myFont;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.title-book{
+    display: flex;
+    font-family: myFont;
+    font-weight: 700;
+    font-size: 25px;
+    justify-content: flex-end;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    gap:10px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 3;
+}
+
+.new-book-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding-top:55px;
+    border: 1px solid black;
+    gap:20px;
+}
+
+h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+label{
+    font-family: myFont;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+input{
+    background-color: #e4dacd;
+    width: 280px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    margin-bottom: 40px;
+}
+.form-act{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.button-read,
+.new-book{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(172, 208, 238);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(150, 193, 228);;
+}
