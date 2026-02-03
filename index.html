@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
-    <scrip src="script.js" defer></scrip>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -14,43 +14,13 @@
             <div class="title">Library</div>
         </div>
 
-        <div class="content">
-            <div class="book">
-                <div class="text">
-                    <div class="title-book">Example1</div>
-                    <div class="info">
-                        <div class="author">Autor</div>
-                        <div class="pages">200 pages</div>
-                    </div>
-                    
-                </div>
-                <div class="read">I read that</div>
-                <div class="btn-container">
-                    <button class="button-read">Read</button>
-                </div>
-            </div>
-            <div class="book">
-                <div class="text">
-                    <div class="title-book">Example2</div>
-                    <div class="info">
-                        <div class="author">Autor2</div>
-                        <div class="pages">400 pages</div>
-                    </div>
-                    
-                </div>
-                <div class="read">I do not read that</div>
-                <div class="btn-container">
-                    <button class="button-read">Read</button>
-                </div>
-            </div>
-            
-        </div>
+        <div class="content"></div>
         <div class="new-book-container">
             <h1>Add a new Book Here!</h1>
-            <form action="#">
+            <form id="book-form" action="#" method="POST">
                 <div class="form-act">
-                    <label for="book_tittle">Name</label>
-                    <input type="text" id="book_tittle" name="book_tittle" required>
+                    <label for="book_title">Name</label>
+                    <input type="text" id="book_title" name="book_title" required>
                 </div>
                 <div class="form-act">
                     <label for="book_author">Author</label>
@@ -60,8 +30,9 @@
                     <label for="book_pages">Pages</label>
                     <input type="number" id="book_pages" name="book_pages" required>
                 </div>
+                <button type="submit" class="new-book">Add New Book!</button>
+
             </form>
-            <button class="new-book">Add New Book!</button>
         </div>
         
     </div>
